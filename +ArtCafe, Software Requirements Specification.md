@@ -37,7 +37,15 @@ The typical user of this app.
 </p>
 
 #### 2.2 Assumptions and Dependencies
-! TODO (FILL OR REMOVE)
+Dinu, prolly is shit
+<ul style="font-size: 16;">
+<li>We intend to create a cross-platform application.
+<li>We expect the application to work for up to 200 users at the same time, with the possibility to upscale the number of users depending on how successful the launch will be. 
+<li>We use (The application uses) Python as the main programming language. 
+<li>In order to create the cross-platform app we will use the Kivy library.
+<li>The database aspect would be delegated to a third party and should be performed using a NoSQL DBMS.
+<li>For augmented reality, we are planning on using the OpenCV python library.
+</ul>
 
 ---
 
