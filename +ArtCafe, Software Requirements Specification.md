@@ -21,29 +21,23 @@ Included in this collection, will be the result of a 3-month research that inclu
 It should not and will not include any findings that arose after November the 14th.
 </p>
 
-#### 1.5 Definitions and Acronyms
-! TODO (FILL OR REMOVE)
-
-
 ---
 
 
 ### **2. Overview**
 
 #### 2.1 User Needs
-David
 <ul style="font-size: 16;">
 <li>User needs to be able to login
-<li>User mmust have the ability to scan the QR code using camera
-<li>Information must be presented simple and visible so the user will not have any troubles and issues achieving his/her goal of using the application efficiently
+<li>User must have the ability to scan the QR code using camera
+<li>Information must be presented simple and visible so the user will not have any troubles and issues achieving their goal of using the application efficiently
 <li>The font being used must be compatible with most of the languages so the user will be able to read everything
 <li>Data of the user must be also protected in order to prevent any malicious behavior
 <li>User must have the choice to edit the data that is being stored about them, meaning maintainability of the data.
-<li>User needs to have an intuitive interface, using standards in UI/UX will be necessary. (Check mark = continue, Cross = decline) etc
+<li>The user shall navigate using an intuitive interface, favouring good colour contrast and simply recognisable icons.
 </ul>
 
 #### 2.2 Assumptions and Dependencies
-Dinu, prolly is shit
 <ul style="font-size: 16;">
 <li>We intend to create a cross-platform application.
 <li>We expect the application to work for up to 200 users at the same time, with the possibility to upscale the number of users depending on how successful the launch will be. 
@@ -89,7 +83,7 @@ Dinu, prolly is shit
 
 #### 3.4 Nonfunctional Requirements
 <ul style="font-size: 16;">
-<li> Median TTI should be lower than 1 second.
+<li> Median Time-To-Interactive (TTI) should be lower than 1 second.
 <li> Gameification is key, interactions and feedbacks is as important as the feature itself.
 <li> Dark Mode and Accessibility are fundamental for a democratic user experience.
 </ul>
@@ -107,7 +101,9 @@ To be produced in-house by our internal development team:
 <ol style="font-size: 16; list-style-type: upper-roman;">
 <li> 
 The cross-platform frontend our users interact with. 
-<br> Used Framework: Kivy library 
+<br> Used Frameworks: Kivy library
+<br> Bindings will be exported using: Jinja, Py2HTML
+<br> HTTP Server will run using: FastAPI + Uvicorn
 </li>
 <li> 
 A notification service 
@@ -116,7 +112,7 @@ A notification service
 <br> It listens for commands from the backend.
 <br> Most common use-case: We want the user to use our product more than once so we send a push notification that says: " We have new places to explore! Come and bring your friends!"
 </li>
-
+</ol>
 
 #### 4.2 Components to be outsourced
 <p style="font-size: 16;">
