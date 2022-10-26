@@ -95,7 +95,22 @@ Dinu, prolly is shit
 ### **4. Workload and Responsibilities**
 
 #### 4.1 Components built in-house
-! TODO (FILL OR REMOVE)
+<p style="font-size: 16;">
+To be produced in-house by our internal development team:
+</p>
+<ol style="font-size: 16; list-style-type: upper-roman;">
+<li> 
+The cross-platform frontend our users interact with. 
+<br> Used Framework: Kivy library 
+</li>
+<li> 
+A notification service 
+<br> The specifications are as follows: we should be able to interact with users trough notifications that they allow. 
+<br> Preferred notification types are: push and pop. 
+<br> It listens for commands from the backend.
+<br> Most common use-case: We want the user to use our product more than once so we send a push notification that says: " We have new places to explore! Come and bring your friends!"
+</li>
+
 
 #### 4.2 Components to be outsourced
 <p style="font-size: 16;">
