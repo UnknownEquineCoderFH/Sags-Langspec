@@ -31,10 +31,16 @@ It should not and will not include any findings that arose after November the 14
 ### **2. Overview**
 
 #### 2.1 User Needs
-<p style="font-size: 16;">
-The typical user of this app.
-! TODO (FILL OR REMOVE)
-</p>
+David
+<ul style="font-size: 16;">
+<li>User needs to be able to login
+<li>User mmust have the ability to scan the QR code using camera
+<li>Information must be presented simple and visible so the user will not have any troubles and issues achieving his/her goal of using the application efficiently
+<li>The font being used must be compatible with most of the languages so the user will be able to read everything
+<li>Data of the user must be also protected in order to prevent any malicious behavior
+<li>User must have the choice to edit the data that is being stored about them, meaning maintainability of the data.
+<li>User needs to have an intuitive interface, using standards in UI/UX will be necessary. (Check mark = continue, Cross = decline) etc
+</ul>
 
 #### 2.2 Assumptions and Dependencies
 Dinu, prolly is shit
