@@ -73,7 +73,7 @@ It should not and will not include any findings that arose after November the 14
 <li> (Physical cafe) Providing clients with restrooms, chairs, tables, and every other requirement in order for the cafe to be FDA-compliant.
 </ul>
 
-#### 3.3 Functional Features
+#### 3.3 Functional Requirements
 <ul style="font-size: 16;">
 <li> Registration/Sign In process is to be implemented with a Two-Factor Authentication protocol in mind (usage of an extra login verification step, e.g. biometric, email link + credentials, or even an external authentication app like Google Authenticator).
 <li> Upon scanning a QR code, the application should interpret said code and display a location using augmented reality.
