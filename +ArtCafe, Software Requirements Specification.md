@@ -63,22 +63,27 @@ It should not and will not include any findings that arose after November the 14
 
 #### 3.2 User Requirements
 <ul style="font-size: 16;">
-<li> Sign In the app.
-<li> Keep a collection of favourite places.
-<li> Interact with QRs in the environment.
-<li> Share their knowledge and participate in active cache hiding.
+<li> The ability to create a personal account within the application and sign into the application using said account.
+<li> The ability for a user to keep a collection of favourite locations.
+<li> Potentially allowing users to share favourite locations between one another.
+<li> Functionality related to scanning the QR Codes and, through the use of Augmented Reality, interpreting them into visualized historical locations within the application.
+<li> Functionality that would allow users to chat with each other within the application, giving them a space to discuss locations and exchange any related knowledge.
+<li> (Physical cafe) Providing clients with free internet connection.
+<li> (Physical cafe) Providing clients with what you would normally find in a cafe (coffee, desserts, snacks, and any other food and drink).
+<li> (Physical cafe) Providing clients with restrooms, chairs, tables, and every other requirement in order for the cafe to be FDA-compliant.
 </ul>
 
-#### 3.3 Functional Features
+#### 3.3 Functional Requirements
 <ul style="font-size: 16;">
-<li> Sign In are implemented with a 2FA protocol in mind (biometric/email link + credentials).
-<li> Upon scanning a QR code, virtual reality should be introduced in the scene.
-<li> App should be multiplatform, preferrably with the same code base.
+<li> Registration/Sign In process is to be implemented with a Two-Factor Authentication protocol in mind (usage of an extra login verification step, e.g. biometric, email link + credentials, or even an external authentication app like Google Authenticator).
+<li> Upon scanning a QR code, the application should interpret said code and display a location using augmented reality.
+<li> The app should be cross-platform, with the same code base and shared database.
 <li> Calls to the database should be handled by a proxy server.
-<li> Content should be filtrable by tag, location and popularity.
+<li> If user consent is granted, the application should collect data related to QR code popularity, the amount of times a location has been "favourited", as well as data related to the popularity and the ways that in-app functionality is used.
+<li> Content should be filterable by tag, location and popularity.
 <li> Database should be abstracted away from the front-end, a simple rest API from app to server should serve as a middleware, while the server handles different services to gather the data and serving it.
 <li> The final product should be distributable.
-<li> AR should be implemented using well known technologies.
+<li> Augmented Reality should be implemented using well known technologies (for example the AugPy Python library).
 </ul>
 
 #### 3.4 Nonfunctional Requirements
@@ -86,6 +91,7 @@ It should not and will not include any findings that arose after November the 14
 <li> Median Time-To-Interactive (TTI) should be lower than 1 second.
 <li> Gameification is key, interactions and feedbacks is as important as the feature itself.
 <li> Dark Mode and Accessibility are fundamental for a democratic user experience.
+<li> Front-end functionality should be kept simple and intuitive, to prevent as much end user confusion as possible.
 </ul>
 
 
