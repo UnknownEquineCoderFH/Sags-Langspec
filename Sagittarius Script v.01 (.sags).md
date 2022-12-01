@@ -41,13 +41,13 @@ Define a `pipeline` with the following syntax
 
 To illustrate the meaning of this pipeline, we'll take it apart line by line
 
-1) `pipeline avg_measurement (Measurement... -> Float)`
+#### 1. `pipeline avg_measurement (Measurement... -> Float)`
 
 The pipeline keyword creates a new pipeline, which we name `avg_measurement`.
 As part of the declaration, we annotate the input and output type of the pipeline 
 `(Measurement... -> Float)`, which translates to: *take a stream of Measurement and return a Float*.
 
-2) `forward "measurements"`
+#### 2. `forward "measurements"`
 
 This expresses where the data comes from. Imagine a .ssd snippet like the one below as the source. 
 In this case, the `measurements` label declares where the data comes from (i.e. the data source).
@@ -76,21 +76,21 @@ application:
 ...
 ```
 
-3) `filter "value"`
+#### 3. `filter "value"`
 
 The `filter` pipelin transforms any `container` or `struct` object into some values taken from it.
 In the case of `struct`, this is translated to taking only a single field from each value in the pipeline, effectively filtering the objects into one of their fields (in this case, a `Measurement` into a `Float`).
 
-4) `takeif valid`
+#### 4. `takeif valid`
 
 The `takeif` pipeline applies a value-wise filter and only allows values that respect a certain boolean condition. 
 `takeif` requires a pipeline that takes whatever type you're filtering and returns a `Boolean`, in this case `valid` would be a built-in for filtering NAN and null values.
 
-5) `collect 100`
+#### 5. `collect 100`
 
 The `collect` pipeline takes a `Stream` and transforms it into a `List` of the same type, with length *N*, where *N* is the number provided to it.
 
-6) `mean`
+#### 6. `mean`
 
 Finally, we call the `mean` pipeline on the entire operation. It takes a `List` of numeric values and returns the arithmetic mean. In this case, it will be a `Float` since `"value"` is a `Float` and we annotated the type in line 2.
 
